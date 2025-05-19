@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-sans text-primary-950 bg-white;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display leading-tight text-primary-950;
+  }
+}
+
+@layer components {
+  .container {
+    @apply px-4 mx-auto max-w-7xl;
+  }
+  
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 text-base font-medium transition-colors rounded-none focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+  
+  .btn-primary {
+    @apply text-white bg-primary-950 hover:bg-primary-800 focus:ring-primary-950;
+  }
+  
+  .btn-outline {
+    @apply text-primary-950 bg-transparent border border-primary-950 hover:bg-primary-950 hover:text-white focus:ring-primary-950;
+  }
+  
+  .section {
+    @apply py-16 md:py-24;
+  }
+  
+  .section-title {
+    @apply mb-12 text-3xl font-semibold md:text-4xl;
+  }
+  
+  .fade-in {
+    @apply animate-fadeIn;
+  }
+  
+  .slide-up {
+    @apply animate-slideUp;
+  }
+}
